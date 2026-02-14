@@ -49,24 +49,8 @@ List the key features of your project:
 -User-Friendly Interface: Simple web interface to enter data and view results quickly.
 
 -Real-time Results: Instant prediction output with clear status or score.
+
 ---
-
-## Implementation
-
-### For Software:
-
-#### Installation
-```bash
-No installation required
-
-```
-
-#### Run
-```bash
-1. or clone the repository
-2. Open index.html in any web browser
-
-```
 
 
 ## Project Documentation
@@ -91,25 +75,26 @@ Prediction result displayed after submission
 **System Architecture:**
 System Architecture
 
-User enters data
+-User enters data
 
-JavaScript processes input
+-JavaScript processes input
 
-Prediction logic calculates result
+-Prediction logic calculates result
 
-Output displayed instantly on webpage
+-Output displayed instantly on webpage
 
-Application Workflow
 
-User opens website
+**Application Workflow**
 
-Inputs academic details
+-User opens website
 
-Clicks predict button
+-Inputs academic details
 
-System processes data
+-Clicks predict button
 
-Result displayed instantly
+-System processes data
+
+-Result displayed instantly
 
 ---
 
@@ -132,38 +117,39 @@ Live Website:https://joshnajoyn517-bot.github.io/CodeX/
 Tool Used: ChatGPT
 Purpose:
 
-Help with HTML/CSS layout
+-Help with HTML/CSS layout
 
-JavaScript logic ideas
+-JavaScript logic ideas
 
-Debugging small errors
+-Debugging small errors
 
-README documentation help
+-README documentation help
 
-Key Prompts Used:
+**Key Prompts Used:**
 
-"Create a simple placement prediction form using HTML CSS JS"
+-Create a simple placement prediction form using HTML CSS JS
 
-"Help me write JavaScript logic for prediction result display"
+-Help me write JavaScript logic for prediction result display
 
-"Fix layout issues in my webpage"
+-Fix layout issues in my webpage
 
-"Help me write project documentation"
+Help me write project documentation
 
 Percentage of AI-generated code:
-👉 10–20% (safe realistic value)
+-  10–20%
 
-Human Contributions:
 
-UI design and layout decisions
+**Human Contributions:**
 
-Prediction logic creation
+-UI design and layout decisions
 
-Testing and debugging
+-Prediction logic creation
 
-GitHub deployment
+-Testing and debugging
 
-Documentation editing
+-GitHub deployment
+
+-Documentation editing
 
 
 
