@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Placement Readiness Predictor</title>
+
+<style>
+body{
+ font-family:Arial;
+ background:linear-gradient(to right,#667eea,#764ba2);
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ height:100vh;
+}
+
+.container{
+ background:white;
+ padding:30px;
+ border-radius:15px;
+ width:380px;
+ text-align:center;
+ box-shadow:0px 10px 30px rgba(0,0,0,0.3);
+}
+
+input,select{
+ width:90%;
+ padding:8px;
+ margin:6px;
+}
+
+button{
+ background:linear-gradient(to right,#4facfe,#00f2fe);
+ color:white;
+ padding:10px;
+ border:none;
+ border-radius:8px;
+ cursor:pointer;
+}
+
+.progressBar{
+ background:#ddd;
+ border-radius:10px;
+ margin-top:10px;
+}
+
+.progress{
+ height:15px;
+ width:0%;
+ background:green;
+ border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>AI Placement Readiness Predictor 🤖</h2>
+<p style="color:gray;">AI Powered Career Readiness & Smart Preparation Assistant</p>
+
+<label>Dream Role</label>
+<select id="role">
+<option>Frontend</option>
+<option>Backend</option>
+<option>AI/ML</option>
+<option>Data Analyst</option>
+</select>
+
+<label>DSA Level (1-10)</label>
+<input type="number" id="dsa">
+
+<label>Projects Count</label>
+<input type="number" id="projects">
+
+<label>Aptitude Score (0-100)</label>
+<input type="number" id="aptitude">
+
+<label>Communication (1-10)</label>
+<input type="number" id="communication">
+
+<br><br>
+<button onclick="calculate()">Calculate</button>
+
+<h3 id="result"></h3>
+
+<div class="progressBar">
+<div id="progress" class="progress"></div>
+</div>
+
+<h3 id="risk"></h3>
+<h3 id="aiLevel"></h3>
+
+<h3>Suggested Company 🎯</h3>
+<p id="company"></p>
+
+<h3>Smart Preparation Coach 🤖</h3>
+<p id="tips"></p>
+
+<h3>📅 Week-by-Week Smart Plan</h3>
+<div id="roadmap"></div>
+
+</div>
+
+<script>
+function calculate(){
+
+let dsa = Number(document.getElementById("dsa").value);
+let projects = Number(document.getElementById("projects").value);
+let aptitude = Number(document.getElementById("aptitude").value);
+let communication = Number(document.getElementById("communication").value);
+let role = document.getElementById("role").value;
+
+let score = (dsa*2 + projects*5 + aptitude*0.5 + communication*2);
+
+document.getElementById("result").innerHTML =
+"Readiness Score: " + score.toFixed(2);
+
+document.getElementById("progress").style.width = score + "%";
+
+let risk="";
+let company="";
+let level="";
+
+if(score < 40){
+ risk="HIGH RISK ⚠️";
+ level="Beginner Level 🚀";
+ company="Startups / Internship Companies";
+ document.getElementById("risk").style.color="red";
+}
+else if(score < 70){
+ risk="MEDIUM RISK ⚠️";
+ level="Intermediate Level 💪";
+ company="Service Companies (TCS, Infosys, Wipro)";
+ document.getElementById("risk").style.color="orange";
+}
+else{
+ risk="LOW RISK ✅";
+ level="Industry Ready 🎯";
+ company="Product Companies (Amazon, Google, Microsoft)";
+ document.getElementById("risk").style.color="green";
+}
+
+document.getElementById("risk").innerHTML=risk;
+document.getElementById("aiLevel").innerHTML=level;
+document.getElementById("company").innerHTML=company;
+
+/* SMART COACH */
+let tips="";
+if(dsa<5) tips+="• Improve DSA skills<br>";
+if(projects<2) tips+="• Build more projects<br>";
+if(communication<5) tips+="• Practice communication<br>";
+if(aptitude<50) tips+="• Practice aptitude daily<br>";
+if(tips==="") tips="You are well prepared 👍";
+
+document.getElementById("tips").innerHTML=tips;
+
+/* WEEK PLAN */
+let weeks="";
+
+if(score<40){
+ weeks="Week 1: DSA Basics<br>Week 2: Aptitude Practice<br>Week 3: Mini Projects<br>Week 4: Mock Interviews";
+}
+else if(score<70){
+ weeks="Week 1: Advanced DSA<br>Week 2: System Design Basics<br>Week 3: Build Strong Projects<br>Week 4: Resume + Interview Prep";
+}
+else{
+ weeks="Week 1: Competitive Coding<br>Week 2: System Design<br>Week 3: Real Interview Practice<br>Week 4: Company Specific Preparation";
+}
+
+/* ROLE BONUS */
+if(role=="Frontend") weeks+="<br>Bonus: React Projects";
+if(role=="Backend") weeks+="<br>Bonus: APIs + NodeJS";
+if(role=="AI/ML") weeks+="<br>Bonus: Python + Machine Learning";
+if(role=="Data Analyst") weeks+="<br>Bonus: SQL + PowerBI";
+
+document.getElementById("roadmap").innerHTML=weeks;
+
+}
+</script>
+
+</body>
+</html>
+
+
