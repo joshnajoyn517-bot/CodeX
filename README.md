@@ -57,7 +57,7 @@ List the key features of your project:
 
 ### For Software:
 
-#### Screenshots (Add at least 3)
+#### Screenshots 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/0f8b9e1c-b49d-4b29-857c-6610cfdfa204" />
 
 Home page showing placement prediction form
@@ -73,7 +73,6 @@ Prediction result displayed after submission
 
 
 **System Architecture:**
-System Architecture
 
 -User enters data
 
