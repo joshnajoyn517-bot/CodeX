@@ -63,7 +63,7 @@ No installation required
 
 #### Run
 ```bash
-1. Download or clone the repository
+1. or clone the repository
 2. Open index.html in any web browser
 
 ```
@@ -75,30 +75,41 @@ No installation required
 
 #### Screenshots (Add at least 3)
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/0f8b9e1c-b49d-4b29-857c-6610cfdfa204" />
+
 Home page showing placement prediction form
 
 <img width="1600" height="777" alt="image" src="https://github.com/user-attachments/assets/3c7eb4ba-e38b-4c53-bf4e-93d36ada3527" />
+
 User entering academic details
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/6aa6f474-61f0-4e4d-8a65-6c4345369ab9" />
+
 Prediction result displayed after submission
 
 
 
 **System Architecture:**
+System Architecture
 
--User enters data
--JavaScript processes input
--Prediction logic calculates result
--Output displayed instantly on webpage
+User enters data
 
-**Application Workflow:**
+JavaScript processes input
 
--User opens website
--Inputs academic details
--Clicks predict button
--System processes data
--Result displayed instantly
+Prediction logic calculates result
+
+Output displayed instantly on webpage
+
+Application Workflow
+
+User opens website
+
+Inputs academic details
+
+Clicks predict button
+
+System processes data
+
+Result displayed instantly
 
 ---
 
@@ -106,9 +117,9 @@ Prediction result displayed after submission
 
 ### Video
 
-[Add your demo video link here - YouTube, Google Drive, etc.]
+https://drive.google.com/file/d/1sUh2uKPu-h2a9F98mobaWwKBDzkZl2Lm/view?usp=sharing
 
-*Explain what the video demonstrates - key features, user flow, technical highlights*
+This video demonstrates the complete user flow of the Placement Predictor — entering student details, selecting skills, generating placement prediction results, and showing key features like real‑time analysis and recommendation output.
 
 ### Additional Demos
 Live Website:https://joshnajoyn517-bot.github.io/CodeX/
@@ -117,40 +128,50 @@ Live Website:https://joshnajoyn517-bot.github.io/CodeX/
 
 ## AI Tools Used 
 
-If you used AI tools during development, document them here for transparency:
 
 Tool Used: ChatGPT
 Purpose:
--UI suggestions
--Documentation help
--Debugging assistance
 
-Human Contributions:
--UI design
--Project logic implementation
--Deployment
--Testing
+Help with HTML/CSS layout
+
+JavaScript logic ideas
+
+Debugging small errors
+
+README documentation help
 
 Key Prompts Used:
 
--Create a simple placement prediction form using HTML CSS JS
--Help me write JavaScript logic for prediction result display
--Fix layout issues in my webpage
--Help me write project documentation
+"Create a simple placement prediction form using HTML CSS JS"
+
+"Help me write JavaScript logic for prediction result display"
+
+"Fix layout issues in my webpage"
+
+"Help me write project documentation"
 
 Percentage of AI-generated code:
-  10–20%
+👉 10–20% (safe realistic value)
 
 Human Contributions:
--UI design
--Project logic implementation
--Deployment
--Testing
+
+UI design and layout decisions
+
+Prediction logic creation
+
+Testing and debugging
+
+GitHub deployment
+
+Documentation editing
+
+
 
 ---
 
 ## Team Contributions
 Rithika Mary Shimit – UI Design, Documentation, Testing
+
 Joshna Joy N – Frontend Development, Deployment, Prediction Logic
 
 
